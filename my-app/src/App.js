@@ -3,7 +3,8 @@ import './App.css';
 import {useState,useEffect} from "react";
 
 // API PREFIX URL: Replace <YOUR_HEROKU_APP> with the actual heroku app
-const URL = process.env.NODE_ENV === "development" ? "http://localhost:5000/": "<YOUR_HEROKU_APP>";
+const URL = process.env.NODE_ENV === "development" ? "http://localhost:5000/": "https://hosting-hackathon-demo.herokuapp.com/app/";
+console.log(process.env)
 
 function App() {
   const [text,setText] = useState("<DEFAULT TEXT>")
