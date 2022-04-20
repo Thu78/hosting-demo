@@ -4,8 +4,6 @@ import {useState,useEffect} from "react";
 
 // API PREFIX URL: Replace <YOUR_HEROKU_APP> with the actual heroku app
 const URL = process.env.NODE_ENV === "development" ? "http://localhost:5000/": window.location.href;
-console.log(process.env)
-console.log(window.location.href)
 
 function App() {
   const [text,setText] = useState("<DEFAULT TEXT>")
