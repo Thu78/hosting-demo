@@ -8,6 +8,8 @@ There are a lot of files in this repository which might make it confusing on wha
 - .gitignore: file that restricts some files from being pushed to git, we might want to do this to prevent sensitive information (API Keys) from being public
 - package.json: contains all the libraries and scripts that we are going to use
 - index.js: our backend application
+- .env.example: what the environment variable file (.env) should look like. Put your environment variables in .env and not .env.example
+- export_env.sh: custom script to export environment variables on Heroku App
 
 # Instructions
 <details>
@@ -43,11 +45,12 @@ We will be using Heroku to host our application so there are a few things that n
 3. Once the Cli tool is installed, navigate back to the directory and run `heroku login` -> if you get stuck, consult this [source](https://devcenter.heroku.com/articles/heroku-cli#:~:text=with%20these%20instructions.-,Get%20Started%20with%20the%20Heroku%20CLI,-After%20you%20install)
 4. If you have made any changes, make a commit via `git commit -am "changes"`
 5. Deploy this branch to heroku via `git push heroku coupled-hosting:main` -> we have `coupled-hosting:main` since heroku technically only allows you to push main branches in a repository.
-6. If everything goes well, you should see something like this in your command line
+6. Run `source export_env.sh .env` to export your environment variables from .env onto Heroku
+7. If everything goes well, you should see something like this in your command line
 ![image](https://user-images.githubusercontent.com/39445369/164490214-06254a45-fbba-4188-bc80-8745513e859e.png)
+![image](https://user-images.githubusercontent.com/39445369/164542541-472ecdb5-eb46-48ee-9393-7a0f00bf39b4.png)
 
 If there are any issues, you can view the most recent logs by running `heroku logs --tail`
-
 
 
   
