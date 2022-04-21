@@ -24,5 +24,4 @@ How to follow along with
 
 ## Questions and Feedback
 We would love you to provide feedback on the presentation and code via this Google Form :)
-
-<TODO: ADD FORM>
+https://forms.gle/QNgQxgFQMryvqgU86
