@@ -1,4 +1,4 @@
-# Hack Texas Backend Hosting Demo
+# HackTX Hosting Demo
 Slides: https://docs.google.com/presentation/d/1UIqXMD7ADlhhheJRBxrne49oVTaMQN2d/edit?usp=sharing&ouid=113681470195127276939&rtpof=true&sd=true
 
 ## Overview
