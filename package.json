@@ -1,0 +1,29 @@
+{
+  "name": "hosting-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install && cd my-app && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Causality-C/hosting-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Causality-C/hosting-demo/issues"
+  },
+  "homepage": "https://github.com/Causality-C/hosting-demo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "serverless-http": "^3.1.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^12.0.4"
+  }
+}

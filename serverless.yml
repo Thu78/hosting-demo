@@ -1,0 +1,34 @@
+# serverless.yml
+
+service: serverless-nodejs-app
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: eu-central-1
+
+# Allows for testing offline
+plugins:
+  - serverless-offline
+
+# Fixes a bug 
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
+
+package:
+  exclude:
+    - my-app/**
+functions:
+  app:
+    handler: index.server # reference the file and exported method
+    events: # events trigger lambda functions
+      - http: # this is an API Gateway HTTP event trigger
+          path: /hello
+          method: GET 
+          cors: true
+      - http: # all routes get proxied to the Express router
+          path: /{proxy+}
+          method: ANY
+          cors: true
