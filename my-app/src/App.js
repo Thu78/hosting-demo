@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 const URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:5000/"
-    : "<AWS_URL>";
+    : "https://05a0oe80bf.execute-api.eu-central-1.amazonaws.com/dev/";
 
 function App() {
   const [text, setText] = useState("<DEFAULT TEXT>");
